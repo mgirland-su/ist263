@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Week 4 Tables and Forms</title>
+        <style>
+            td, th {border: 1px solid pink;}
+        </style>
+    </head>
+    <body>
+        <h1>Tables and Forms</h1>
+        <h2>Tables</h2>
+        
+        <table>
+            <caption>World Population</caption>
+            <tr>
+                <th>Country</th> <!--headings don't have to be at the top-->
+                <th>Population</th>
+                <th>% of World Population</th>
+            </tr>
+            <tr>
+                <td>China</td>
+                <td>1,403,830,640</td>
+                <td>18%</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td>1,365,529,124</td>
+                <td>17.5%</td>
+            </tr>
+        </table>
+
+        <h2>Forms</h2>
+
+        <form action="" method="post">
+            <!-- all form tags are inline -->
+            <label for="fullname">Your name here:</label>
+            <input type="text" id="fullname" name="Full Name"> <br>
+            <label for="instructions">Special Instructions:</label> <br>
+            <textarea id="instructions" name="instructions" row="3" cols="50"></textarea> <br>
+
+            <input type="radio" id="pickup" name="pickdelivery" value="Customer wants pickup">
+            <label for="pickup">pickup</label>
+            <input type="radio" id="delivery" name="pickdelivery" value="Customer wants delivery">
+            <label for="delivery">delivery</label><br>
+
+            <input type="checkbox" id="extra" name="extra" value="extra sauce">
+            <label for="extra">Extra sauce</label> <br>
+
+            <label>Neighborhood</label>
+            <select id="neighborhood" name="neighborhood">
+                <option value="pickup"></option>
+                <option value="westcott">Westcott</option>
+                <option value="downtown">Downtown</option>
+                <option value="eastwood">Eastwood</option>
+            </select> <br>
+           
+            <input type="submit" value="Submit form">
+        </form>
+
+    </body>
+</html>
