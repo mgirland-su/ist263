@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Embedded CSS</title>
+    <style>
+        h1 {color:cadetblue;} /*body selects everything and comments look different in CSS, must follow this format*/
+        body {font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color:bisque;}
+        p, h1, a  /*this is a grouped selector*/
+            {font-size: 2em;
+            font-weight: bolder;
+            background-color:darkolivegreen;} /*em 2 is twice the default size*/
+        p a {text-decoration: none;}
+        #secondpara {color:crimson;}
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <a href="http://amazon.com">Amazon</a>
+    <p><a href="http://www.ebay.com">Ebay</a> Lorem ipsum dolor sit amet</p>
+    <!--each value for id must be unique-->
+    <p id="secondpara">Lorem ipsum dolor sit amet</p>
+</body>
+</html>
