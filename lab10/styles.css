@@ -1,0 +1,47 @@
+body {font-family:Georgia, 'Times New Roman', Times, serif;}
+h1 {color:darkolivegreen;}
+h2 {color: #ffffff}
+.evenrow {background-color:cornflowerblue;}
+h1 {font-size: 4em;
+}
+h2 {font-size: 3em;}
+nav {background-color: #a34141;
+padding: 10px;
+margin-bottom: 30px
+}
+nav a {color: #ffffff;}
+nav a:hover {background-color:#451c1c;}
+.copy {float: left;}
+.quote {float: right;}
+.address {display: flex;}
+.linkedin {display: flex;}
+.form {display: flex;}
+.bannerview {max-width: 100%}
+.linkedinlogo {width: 40px}
+.rowone {display: flex;
+background-color: #cfd1d0;
+padding: 10px;
+margin: 30px;
+border-radius: 10px;
+}
+.rowtwo {display: flex;
+background-color: #9c9c9c;
+padding: 10px;
+margin: 30px;
+border-radius: 10px;
+flex-wrap: wrap;
+}
+.map {padding: 10px;
+}
+@media only screen and (max-width: 700px) {
+    nav {
+        display: block;
+    }
+    nav a {display: block;
+        margin: 0 10px;
+        padding: 3px;
+    }
+    nav span {display: none;}
+}
+
+    
