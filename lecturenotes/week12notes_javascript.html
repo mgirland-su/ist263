@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JavaScript Program</title>
+    <script>
+        /* Welcome function will not run until called */
+        function welcome () {
+            alert("Hello World!");
+        }
+        function second () {
+            alert("Second Message");
+        }
+        function third() {
+            alert("Third Message");
+        }
+    </script>
+</head>
+
+<body onload="second();">
+    <h1 onmouseover="third();">JavaScript</h1>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illo in temporibus! Aperiam error sint commodi nulla ab obcaecati cupiditate laudantium a alias soluta necessitatibus illo, quibusdam sit magnam vel?</p>
+    
+    <a href="" onclick="welcome();">Run Welcome Message</a>
+    <!-- Above is us calling the function aka run the function welcome on an onclick event -->
+</body>
+
+</html>
