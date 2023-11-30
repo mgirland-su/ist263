@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <!--
+        CSS:
+        DONE 1. When large = no hamburger 
+        DONE 2. When small = show hamburger 
+        DONE 3. When large = no x 
+        DONE 4. When small = show x 
+        DONE 5. When large = links are side by side 
+        DONE 6. When small = links are stacked 
+        DONE 7. When small = links are initially hidden, must click hamburger to show links 
+
+        JavaScript: 
+        DONE 8. When you click on hamburger, the links are shown 
+        DONE 9. When you click on the x, the links are hidden 
+    -->
+    <style>
+        #hamburgericon {width: 40px;}
+        #hamburgericon, #close {cursor: pointer;}
+        .firstrow {display: flex; justify-content: space-between; margin-bottom: 5px;}
+        @media only screen and (min-width: 800px) {
+            #hamburgericon, #close {display: none;}
+        }
+        @media only screen and (max-width: 799px) {
+            a {display: block;
+                border: 1px solid #444444;
+                padding: 3px;
+            }
+            #navicons {display: none;}
+        }
+    </style>
+    <script>
+        function showNav () {
+            document.getElementById("navicons").style.display = "block";
+        }
+        function hideNav () {
+            document.getElementById("navicons").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="firstrow">
+        <img id="hamburgericon" src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger menu icon" onclick="showNav();">
+        <p id="close" onclick="hideNav();">X</p>
+    </div>
+    <nav id="navicons">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</body>
+</html>
