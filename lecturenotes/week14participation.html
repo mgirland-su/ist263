@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 14 Participation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+    #modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        padding: 5px;
+        margin-left: -100px;
+        margin-top: -100px;
+        display: none;
+    }
+    #subscribe {
+            background-color: darksalmon; 
+            padding: 5px;
+            width: 250px;
+            text-align: center;
+        }
+    #handwriting {font-family: 'Pacifico', cursive;}
+    </style>
+
+    <script>
+        function openModal () {
+            document.getElementById('modal').style.display = 'block';
+        }
+        function closeModal () {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</head>
+<body></body>
+    <p id="subscribe" onclick="openModal();">Subscribe to our mailing list!</p>
+    
+    <div id="modal">
+    <form>
+        <p id="handwriting">Subscribe to our newsletter!</p>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        
+        <label for="email>">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        
+        <input type="submit" value="Subscribe">
+    </form>
+    </div>
+</body>
+</html>

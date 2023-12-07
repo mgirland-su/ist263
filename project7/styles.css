@@ -1,0 +1,51 @@
+nav {background-color: #B6D3E2;
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-style: dashed;
+    border-width: 4px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic; 
+}
+a:hover {color: #7C4541;}
+a {color: #000000;}
+nav div {padding: 5px;}
+.split {justify-content: space-between;}
+.navlinks {display: flex;}
+.navthoughts {display: flex;
+}
+#headshot {border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    margin: 10px;
+    width: 300px;
+}
+.heading {display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {font-family: Arial, Helvetica, sans-serif;
+font-size: 4em;
+font-style: italic;
+}
+h2 {font-size: 2em;
+    font-style: italic;
+}
+body {background-image: url(../images/portfolio/homebg.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#intro {margin: 30px;}
+#intropara {font-size: 1.5em;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sections {display: flex;
+    margin: 5px;
+}
+.descriptions {font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+div article {margin: 10px;}
+
